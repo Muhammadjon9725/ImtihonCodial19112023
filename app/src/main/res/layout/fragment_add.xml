@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.AddFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:id="@+id/back_btn"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/icon_back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:text="Mening kunim"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_20ssp"/>
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:id="@+id/btn_add"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/baseline_done_24"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/animation2"
+        app:lottie_loop="true"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_height="@dimen/_150sdp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/holat"
+            android:layout_height="wrap_content"
+            android:hint="Nomi"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_5sdp"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/bg_linear"
+        android:layout_marginHorizontal="@dimen/_20sdp">
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/baseline_calendar_month_24"/>
+
+        <TextView
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/date_text"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_weight="15"
+            android:text="Oxirgi muddat"
+            android:textSize="@dimen/_16ssp" />
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_weight="1"
+            android:src="@drawable/icon_distribut"/>
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_height="wrap_content">
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/_10sdp"
+            android:inputType="none"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:id="@+id/izoh"
+            android:layout_height="@dimen/_150sdp"
+            android:hint="Izoh.."/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

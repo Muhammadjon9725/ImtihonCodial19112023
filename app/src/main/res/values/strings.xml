@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ImtihonCodial</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="holat">
+        <item>Boshlandi</item>
+        <item>Bajarilmoqda</item>
+        <item>Bajarildi</item>
+    </string-array>
+</resources>
